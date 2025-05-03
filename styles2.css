@@ -1,0 +1,377 @@
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfdfd;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* Navigation */
+  .site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #444;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .nav-menu a:hover {
+    color: #0077cc;
+  }
+  
+  /* Hero Section */
+  .intro-section {
+    padding: 6rem 0;
+    text-align: center;
+    background: linear-gradient(to right, #dbeafe, #f0f9ff);
+  }
+  
+  .intro-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .intro-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #444;
+  }
+  
+  .btn-primary {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #005fa3;
+  }
+  
+  .social-icons {
+    margin-top: 1rem;
+  }
+  
+  .social-icons a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: 500;
+  }
+  
+  .social-icons a:hover {
+    text-decoration: underline;
+  }
+  
+  /* About/Bio Section */
+  .bio-section {
+    padding: 4rem 0;
+  }
+  
+  .bio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .bio-photo {
+    flex: 1 1 250px;
+    max-width: 250px;
+    border-radius: 8px;
+  }
+  
+  .bio-grid div {
+    flex: 2;
+  }
+  
+  .bio-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    padding: 4rem 0;
+    background-color: #f1f5f9;
+    text-align: center;
+  }
+  
+  .skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .skill {
+    background-color: #e0f2fe;
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #0369a1;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .skill:hover {
+    background-color: #bae6fd;
+  }
+  
+  /* Projects Section */
+  .projects-section {
+    padding: 4rem 0;
+  }
+  
+  .projects-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-top: 2rem;
+  }
+  
+  .project-card {
+    padding: 1.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    transition: transform 0.2s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .project-card p {
+    margin-bottom: 0.75rem;
+    color: #555;
+  }
+  
+  .project-card a {
+    text-decoration: none;
+    color: #0077cc;
+    margin-right: 1rem;
+  }
+  .project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .project-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    padding: 4rem 0;
+    background-color: #f9fafb;
+  }
+  
+  .contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  
+  .contact-grid form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-grid input,
+  .contact-grid textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-grid button {
+    align-self: flex-start;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #1f2937;
+    color: #f9fafb;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .bio-grid {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  
+    .contact-grid {
+      flex-direction: column;
+    }
+  }
+  /* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro-section,
+.bio-section,
+.skills-section,
+.projects-section,
+.contact-section {
+  animation: fadeInUp 0.8s ease-in-out both;
+  animation-delay: 0.2s;
+}
+
+/* Enhanced Skills Hover */
+.skill {
+  cursor: default;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transform: scale(1);
+}
+.skill:hover {
+  transform: scale(1.05);
+}
+
+/* Button Enhancements */
+.btn-primary {
+  box-shadow: 0 4px 6px rgba(0, 119, 204, 0.2);
+}
+.btn-primary:active {
+  transform: scale(0.97);
+}
+
+/* Contact Form Inputs Focus State */
+.contact-grid input:focus,
+.contact-grid textarea:focus {
+  outline: none;
+  border-color: #0077cc;
+  box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.2);
+}
+
+/* Project Card Hover Enhancements */
+.project-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-color: #cbd5e1;
+  background-color: #f8fafc;
+}
+
+/* Responsive Heading Adjustment */
+@media (max-width: 768px) {
+  .intro-section h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Optional: Dark Mode Support (JS toggle to add `dark-mode` class on <body>) */
+body.dark-mode {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+body.dark-mode .site-header {
+  background-color: #1e293b;
+  border-bottom: 1px solid #334155;
+}
+
+body.dark-mode .nav-menu a {
+  color: #cbd5e1;
+}
+
+body.dark-mode .nav-menu a:hover {
+  color: #60a5fa;
+}
+
+body.dark-mode .project-card {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+body.dark-mode .skills-section {
+  background-color: #1e293b;
+}
+
+body.dark-mode .contact-section {
+  background-color: #0f172a;
+}
+
+body.dark-mode .btn-primary {
+  background-color: #60a5fa;
+  color: #0f172a;
+}
