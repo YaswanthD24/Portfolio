@@ -352,6 +352,10 @@ body.dark-mode .site-header {
 body.dark-mode .nav-menu a {
   color: #cbd5e1;
 }
+h3 {
+  font-size: 2rem;  /* Adjust size to be bigger than content */
+  font-weight: bold;  /* Ensure it stands out */
+}
 
 body.dark-mode .nav-menu a:hover {
   color: #60a5fa;
